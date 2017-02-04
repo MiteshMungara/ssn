@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		382309F429A1FA2B9EE02FB1 /* Pods_SSN_Validator_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55D911247A074EB802B4C49 /* Pods_SSN_Validator_App.framework */; };
+		FA8297351E42F20D00941BCF /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8297341E42F20D00941BCF /* AboutVC.m */; };
+		FA8696B81E44859D00308F06 /* DataBaseFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8696B71E44859D00308F06 /* DataBaseFile.m */; };
+		FA8696BA1E44871600308F06 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8696B91E44871600308F06 /* libsqlite3.tbd */; };
+		FAB180691E41F45300943A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180681E41F45300943A16 /* main.m */; };
+		FAB1806C1E41F45300943A16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1806B1E41F45300943A16 /* AppDelegate.m */; };
+		FAB1806F1E41F45300943A16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1806E1E41F45300943A16 /* ViewController.m */; };
+		FAB180721E41F45300943A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB180701E41F45300943A16 /* Main.storyboard */; };
+		FAB180741E41F45400943A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB180731E41F45400943A16 /* Assets.xcassets */; };
+		FAB180771E41F45400943A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB180751E41F45400943A16 /* LaunchScreen.storyboard */; };
+		FAB180801E41F6C500943A16 /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1807F1E41F6C500943A16 /* RequestHelper.m */; };
+		FAB180871E41FE9100943A16 /* SSNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180861E41FE9100943A16 /* SSNViewController.m */; };
+		FAB1808A1E42108500943A16 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180891E42108500943A16 /* MoreViewController.m */; };
+		FAB180911E4210D000943A16 /* MoreVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180901E4210D000943A16 /* MoreVCCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DFD26DA0D34B16D2355853C /* Pods-SSN Validator App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN Validator App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSN Validator App/Pods-SSN Validator App.release.xcconfig"; sourceTree = "<group>"; };
+		0E1618B8D653CCE64C93747C /* Pods-SSN Validator App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN Validator App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSN Validator App/Pods-SSN Validator App.debug.xcconfig"; sourceTree = "<group>"; };
+		E55D911247A074EB802B4C49 /* Pods_SSN_Validator_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSN_Validator_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8297331E42F20D00941BCF /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		FA8297341E42F20D00941BCF /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		FA8696B61E44859D00308F06 /* DataBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseFile.h; sourceTree = "<group>"; };
+		FA8696B71E44859D00308F06 /* DataBaseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseFile.m; sourceTree = "<group>"; };
+		FA8696B91E44871600308F06 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FAB180641E41F45300943A16 /* SSN Validator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSN Validator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB180681E41F45300943A16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB1806A1E41F45300943A16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAB1806B1E41F45300943A16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAB1806D1E41F45300943A16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAB1806E1E41F45300943A16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAB180711E41F45300943A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB180731E41F45400943A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB180761E41F45400943A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAB180781E41F45400943A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1807E1E41F6C500943A16 /* RequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelper.h; sourceTree = "<group>"; };
+		FAB1807F1E41F6C500943A16 /* RequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelper.m; sourceTree = "<group>"; };
+		FAB180831E41F78500943A16 /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		FAB180851E41FE9100943A16 /* SSNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNViewController.h; sourceTree = "<group>"; };
+		FAB180861E41FE9100943A16 /* SSNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNViewController.m; sourceTree = "<group>"; };
+		FAB180881E42108500943A16 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		FAB180891E42108500943A16 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		FAB1808F1E4210D000943A16 /* MoreVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreVCCell.h; sourceTree = "<group>"; };
+		FAB180901E4210D000943A16 /* MoreVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreVCCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB180611E41F45300943A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8696BA1E44871600308F06 /* libsqlite3.tbd in Frameworks */,
+				382309F429A1FA2B9EE02FB1 /* Pods_SSN_Validator_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1380B0F9BBECF142EDD3EDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E1618B8D653CCE64C93747C /* Pods-SSN Validator App.debug.xcconfig */,
+				0DFD26DA0D34B16D2355853C /* Pods-SSN Validator App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA5544E8ACEFEAEEF8EACD8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA8696B91E44871600308F06 /* libsqlite3.tbd */,
+				E55D911247A074EB802B4C49 /* Pods_SSN_Validator_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA8297321E42F1EA00941BCF /* Group More */ = {
+			isa = PBXGroup;
+			children = (
+				FA8297331E42F20D00941BCF /* AboutVC.h */,
+				FA8297341E42F20D00941BCF /* AboutVC.m */,
+			);
+			name = "Group More";
+			sourceTree = "<group>";
+		};
+		FA8696B51E44859D00308F06 /* Database File */ = {
+			isa = PBXGroup;
+			children = (
+				FA8696B61E44859D00308F06 /* DataBaseFile.h */,
+				FA8696B71E44859D00308F06 /* DataBaseFile.m */,
+			);
+			path = "Database File";
+			sourceTree = "<group>";
+		};
+		FAB1805B1E41F45200943A16 = {
+			isa = PBXGroup;
+			children = (
+				FAB180661E41F45300943A16 /* SSN Validator App */,
+				FAB180651E41F45300943A16 /* Products */,
+				C1380B0F9BBECF142EDD3EDD /* Pods */,
+				CA5544E8ACEFEAEEF8EACD8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB180651E41F45300943A16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB180641E41F45300943A16 /* SSN Validator App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB180661E41F45300943A16 /* SSN Validator App */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1806A1E41F45300943A16 /* AppDelegate.h */,
+				FAB1806B1E41F45300943A16 /* AppDelegate.m */,
+				FAB1806D1E41F45300943A16 /* ViewController.h */,
+				FAB1806E1E41F45300943A16 /* ViewController.m */,
+				FAB180851E41FE9100943A16 /* SSNViewController.h */,
+				FAB180861E41FE9100943A16 /* SSNViewController.m */,
+				FA8297321E42F1EA00941BCF /* Group More */,
+				FAB1808B1E42109200943A16 /* MoreVC */,
+				FAB180841E41F9B700943A16 /* Model */,
+				FAB180811E41F76100943A16 /* Resource */,
+				FAB180701E41F45300943A16 /* Main.storyboard */,
+				FAB180731E41F45400943A16 /* Assets.xcassets */,
+				FAB180751E41F45400943A16 /* LaunchScreen.storyboard */,
+				FAB180781E41F45400943A16 /* Info.plist */,
+				FAB180671E41F45300943A16 /* Supporting Files */,
+			);
+			path = "SSN Validator App";
+			sourceTree = "<group>";
+		};
+		FAB180671E41F45300943A16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB180681E41F45300943A16 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB180811E41F76100943A16 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FAB180821E41F76800943A16 /* Library */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		FAB180821E41F76800943A16 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FAB180831E41F78500943A16 /* Library.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FAB180841E41F9B700943A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA8696B51E44859D00308F06 /* Database File */,
+				FAB1807E1E41F6C500943A16 /* RequestHelper.h */,
+				FAB1807F1E41F6C500943A16 /* RequestHelper.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FAB1808B1E42109200943A16 /* MoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				FAB180881E42108500943A16 /* MoreViewController.h */,
+				FAB180891E42108500943A16 /* MoreViewController.m */,
+				FAB1808F1E4210D000943A16 /* MoreVCCell.h */,
+				FAB180901E4210D000943A16 /* MoreVCCell.m */,
+			);
+			name = MoreVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB180631E41F45300943A16 /* SSN Validator App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1807B1E41F45400943A16 /* Build configuration list for PBXNativeTarget "SSN Validator App" */;
+			buildPhases = (
+				B812399D84111DAEA12CD7D0 /* [CP] Check Pods Manifest.lock */,
+				FAB180601E41F45300943A16 /* Sources */,
+				FAB180611E41F45300943A16 /* Frameworks */,
+				FAB180621E41F45300943A16 /* Resources */,
+				875954C9340921C9E80B2A76 /* [CP] Embed Pods Frameworks */,
+				48E4FB841746EA5AD784E0FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SSN Validator App";
+			productName = "SSN Validator App";
+			productReference = FAB180641E41F45300943A16 /* SSN Validator App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB1805C1E41F45200943A16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MitsSoft;
+				TargetAttributes = {
+					FAB180631E41F45300943A16 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 786VC2CNW2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAB1805F1E41F45300943A16 /* Build configuration list for PBXProject "SSN Validator App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB1805B1E41F45200943A16;
+			productRefGroup = FAB180651E41F45300943A16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB180631E41F45300943A16 /* SSN Validator App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB180621E41F45300943A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB180771E41F45400943A16 /* LaunchScreen.storyboard in Resources */,
+				FAB180741E41F45400943A16 /* Assets.xcassets in Resources */,
+				FAB180721E41F45300943A16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E4FB841746EA5AD784E0FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSN Validator App/Pods-SSN Validator App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		875954C9340921C9E80B2A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSN Validator App/Pods-SSN Validator App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B812399D84111DAEA12CD7D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB180601E41F45300943A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8696B81E44859D00308F06 /* DataBaseFile.m in Sources */,
+				FA8297351E42F20D00941BCF /* AboutVC.m in Sources */,
+				FAB180911E4210D000943A16 /* MoreVCCell.m in Sources */,
+				FAB1806F1E41F45300943A16 /* ViewController.m in Sources */,
+				FAB1808A1E42108500943A16 /* MoreViewController.m in Sources */,
+				FAB1806C1E41F45300943A16 /* AppDelegate.m in Sources */,
+				FAB180871E41FE9100943A16 /* SSNViewController.m in Sources */,
+				FAB180691E41F45300943A16 /* main.m in Sources */,
+				FAB180801E41F6C500943A16 /* RequestHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAB180701E41F45300943A16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB180711E41F45300943A16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB180751E41F45400943A16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB180761E41F45400943A16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB180791E41F45400943A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB1807A1E41F45400943A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB1807C1E41F45400943A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1618B8D653CCE64C93747C /* Pods-SSN Validator App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 786VC2CNW2;
+				INFOPLIST_FILE = "SSN Validator App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isquaretestapp.SSN-Validator-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB1807D1E41F45400943A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFD26DA0D34B16D2355853C /* Pods-SSN Validator App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 786VC2CNW2;
+				INFOPLIST_FILE = "SSN Validator App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isquaretestapp.SSN-Validator-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB1805F1E41F45300943A16 /* Build configuration list for PBXProject "SSN Validator App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB180791E41F45400943A16 /* Debug */,
+				FAB1807A1E41F45400943A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1807B1E41F45400943A16 /* Build configuration list for PBXNativeTarget "SSN Validator App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1807C1E41F45400943A16 /* Debug */,
+				FAB1807D1E41F45400943A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB1805C1E41F45200943A16 /* Project object */;
+}
