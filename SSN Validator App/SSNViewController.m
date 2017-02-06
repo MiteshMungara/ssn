@@ -116,44 +116,44 @@
 }
 
 
-
-
-
--(IBAction)settingBtnPressed:(id)sender
-{
-      sqlite3_stmt *statement;
-    const char *dbpath = [_databasePath UTF8String];
-  
-    NSString *strEmailPublic = @"123";
-    if (sqlite3_open(dbpath, &_contactDB) == SQLITE_OK)
-    {
-        NSString *insertSQL = [NSString stringWithFormat:@"INSERT into Tracking (NAME) values ('%@')",strEmailPublic];
-        
-        const char *insert_stmt = [insertSQL UTF8String];
-        sqlite3_prepare_v2(_contactDB, insert_stmt, -1, &statement, NULL);
-        if (sqlite3_step(statement) == SQLITE_DONE)
-        {
-            NSLog(@"Contact added");
-            
-        } else {
-            NSLog(@"Failed to add contact");
-        }
-        
-        sqlite3_finalize(statement);
-    }
-    sqlite3_close(_contactDB);
-    //[self performSegueWithIdentifier:@"" sender:self];
-}
-
--(IBAction)moreBtnPressed:(id)sender
-{
-     [self performSegueWithIdentifier:@"" sender:self];
-}
-
--(IBAction)TrackBtnPressed:(id)sender
-{
-     [self performSegueWithIdentifier:@"" sender:self];
-}
+//
+//
+//
+//-(IBAction)settingBtnPressed:(id)sender
+//{
+//      sqlite3_stmt *statement;
+//    const char *dbpath = [_databasePath UTF8String];
+//  
+//    NSString *strEmailPublic = @"123";
+//    if (sqlite3_open(dbpath, &_contactDB) == SQLITE_OK)
+//    {
+//        NSString *insertSQL = [NSString stringWithFormat:@"INSERT into Tracking (NAME) values ('%@')",strEmailPublic];
+//        
+//        const char *insert_stmt = [insertSQL UTF8String];
+//        sqlite3_prepare_v2(_contactDB, insert_stmt, -1, &statement, NULL);
+//        if (sqlite3_step(statement) == SQLITE_DONE)
+//        {
+//            NSLog(@"Contact added");
+//            
+//        } else {
+//            NSLog(@"Failed to add contact");
+//        }
+//        
+//        sqlite3_finalize(statement);
+//    }
+//    sqlite3_close(_contactDB);
+//    //[self performSegueWithIdentifier:@"" sender:self];
+//}
+//
+//-(IBAction)moreBtnPressed:(id)sender
+//{
+//     [self performSegueWithIdentifier:@"" sender:self];
+//}
+//
+//-(IBAction)TrackBtnPressed:(id)sender
+//{
+//   //  [self performSegueWithIdentifier:@"" sender:self];
+//}
 
 /*
 #pragma mark - Navigation

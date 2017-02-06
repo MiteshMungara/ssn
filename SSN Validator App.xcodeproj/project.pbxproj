@@ -21,6 +21,9 @@
 		FAB180871E41FE9100943A16 /* SSNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180861E41FE9100943A16 /* SSNViewController.m */; };
 		FAB1808A1E42108500943A16 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180891E42108500943A16 /* MoreViewController.m */; };
 		FAB180911E4210D000943A16 /* MoreVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB180901E4210D000943A16 /* MoreVCCell.m */; };
+		FADDE1A11E4899CB00AD92F3 /* PrivecyPolicyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDE1A01E4899CB00AD92F3 /* PrivecyPolicyVC.m */; };
+		FADDE1A41E489B8D00AD92F3 /* TermsofUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDE1A31E489B8D00AD92F3 /* TermsofUseVC.m */; };
+		FADDE1A71E489BDC00AD92F3 /* FAQsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDE1A61E489BDC00AD92F3 /* FAQsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,12 @@
 		FAB180891E42108500943A16 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		FAB1808F1E4210D000943A16 /* MoreVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreVCCell.h; sourceTree = "<group>"; };
 		FAB180901E4210D000943A16 /* MoreVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreVCCell.m; sourceTree = "<group>"; };
+		FADDE19F1E4899CB00AD92F3 /* PrivecyPolicyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivecyPolicyVC.h; sourceTree = "<group>"; };
+		FADDE1A01E4899CB00AD92F3 /* PrivecyPolicyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivecyPolicyVC.m; sourceTree = "<group>"; };
+		FADDE1A21E489B8D00AD92F3 /* TermsofUseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsofUseVC.h; sourceTree = "<group>"; };
+		FADDE1A31E489B8D00AD92F3 /* TermsofUseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsofUseVC.m; sourceTree = "<group>"; };
+		FADDE1A51E489BDC00AD92F3 /* FAQsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAQsVC.h; sourceTree = "<group>"; };
+		FADDE1A61E489BDC00AD92F3 /* FAQsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAQsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,12 @@
 		FA8297321E42F1EA00941BCF /* Group More */ = {
 			isa = PBXGroup;
 			children = (
+				FADDE19F1E4899CB00AD92F3 /* PrivecyPolicyVC.h */,
+				FADDE1A51E489BDC00AD92F3 /* FAQsVC.h */,
+				FADDE1A61E489BDC00AD92F3 /* FAQsVC.m */,
+				FADDE1A01E4899CB00AD92F3 /* PrivecyPolicyVC.m */,
+				FADDE1A21E489B8D00AD92F3 /* TermsofUseVC.h */,
+				FADDE1A31E489B8D00AD92F3 /* TermsofUseVC.m */,
 				FA8297331E42F20D00941BCF /* AboutVC.h */,
 				FA8297341E42F20D00941BCF /* AboutVC.m */,
 			);
@@ -222,6 +237,7 @@
 					FAB180631E41F45300943A16 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 786VC2CNW2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,11 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADDE1A41E489B8D00AD92F3 /* TermsofUseVC.m in Sources */,
 				FA8696B81E44859D00308F06 /* DataBaseFile.m in Sources */,
 				FA8297351E42F20D00941BCF /* AboutVC.m in Sources */,
+				FADDE1A71E489BDC00AD92F3 /* FAQsVC.m in Sources */,
 				FAB180911E4210D000943A16 /* MoreVCCell.m in Sources */,
 				FAB1806F1E41F45300943A16 /* ViewController.m in Sources */,
 				FAB1808A1E42108500943A16 /* MoreViewController.m in Sources */,
+				FADDE1A11E4899CB00AD92F3 /* PrivecyPolicyVC.m in Sources */,
 				FAB1806C1E41F45300943A16 /* AppDelegate.m in Sources */,
 				FAB180871E41FE9100943A16 /* SSNViewController.m in Sources */,
 				FAB180691E41F45300943A16 /* main.m in Sources */,
@@ -439,12 +458,15 @@
 			baseConfigurationReference = 0E1618B8D653CCE64C93747C /* Pods-SSN Validator App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 786VC2CNW2;
 				INFOPLIST_FILE = "SSN Validator App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isquaretestapp.SSN-Validator-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -453,12 +475,14 @@
 			baseConfigurationReference = 0DFD26DA0D34B16D2355853C /* Pods-SSN Validator App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 786VC2CNW2;
 				INFOPLIST_FILE = "SSN Validator App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isquaretestapp.SSN-Validator-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

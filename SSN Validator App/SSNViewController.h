@@ -13,9 +13,10 @@
        DataBaseFile *dbHandler;
 }
 
--(IBAction)settingBtnPressed:(id)sender;
--(IBAction)moreBtnPressed:(id)sender;
--(IBAction)TrackBtnPressed:(id)sender;
+-(IBAction)trackingBtnClicked:(id)sender;
+-(IBAction)dressingBtnClicked:(id)sender;
+-(IBAction)settingBtnClicked:(id)sender;
+-(IBAction)moreBtnClicked:(id)sender;
 
 @property (strong, nonatomic) NSString *databasePath;
 @property (nonatomic) sqlite3 *contactDB;

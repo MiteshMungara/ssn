@@ -23,7 +23,7 @@
     self.navigationItem.title = @"More";
    courtDetailArr = [[NSMutableArray alloc]init];
     [courtDetailArr addObject:@"About us"];
-    [courtDetailArr addObject:@"Privacy Policy"];
+    [courtDetailArr addObject:@"Privecy Policy"];
     [courtDetailArr addObject:@"Terms of Use"];
     [courtDetailArr addObject:@"FAQs"];
     
@@ -86,6 +86,18 @@
 {
     if ([[courtDetailArr objectAtIndex:indexPath.row] isEqualToString:@"About us"]) {
         [self performSegueWithIdentifier:@"AboutVC" sender:self];
+    }
+    if ([[courtDetailArr objectAtIndex:indexPath.row] isEqualToString:@"Privecy Policy"]) {
+         [self performSegueWithIdentifier:@"PrivecyPolicyVC" sender:self];
+    }
+//    if ([[courtDetailArr objectAtIndex:indexPath.row] isEqualToString:@"FAQs"]) {
+//        [self performSegueWithIdentifier:@"FAQVC" sender:self];
+//    }
+    if ([[courtDetailArr objectAtIndex:indexPath.row] isEqualToString:@"Terms of Use"]) {
+        [self performSegueWithIdentifier:@"TermsofUseVC" sender:self];
+    }
+    if ([[courtDetailArr objectAtIndex:indexPath.row] isEqualToString:@"FAQs"]) {
+        [self performSegueWithIdentifier:@"FAQsVC" sender:self];
     }
     //[self performSegueWithIdentifier:@"CommunityServiceTrackerVC" sender:self];
 }
